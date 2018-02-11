@@ -27,10 +27,24 @@ h4{
 	margin-top: 10rem;
 }
 
+.registry-block{
+	text-align: center;
+}
+
+.registry-block a{
+	display: inline-block;
+}
+
+.registry{
+	max-width: 200px;
+	height: auto;
+}
+
 p.body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-style: italic;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	margin-top: 5rem;
 	text-align: center;
 }
