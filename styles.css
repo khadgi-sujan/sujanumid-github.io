@@ -10,6 +10,12 @@ html{
     box-sizing: border-box;
 }
 
+body{
+	background-color: #303145;
+	background-image: url(img/main-bg.png);
+	background-size: 100%;
+}
+
 .desktop-bg{
 	width: 1024px;
     height: auto;
