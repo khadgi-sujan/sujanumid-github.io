@@ -1,42 +1,251 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900|Roboto&display=swap');
 html{
 	font-size: 100%;
-	background-color: #303145
 }
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+  --white: #ffffff;
+  --lilac: #C09EBF;
+  --light-grey: #f6f6f6;
+  --heading-type:'Poppins', sans-serif;;
+  --body-type:'Roboto', sans-serif;
+  --gs-1: 10px;
+  --gs-2: 20px;
+  --gs-3: 40px;
+  --gs-4: 60px;
+  --gs-5: 80px;
+}
+
+a{
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+
+sup{
+	top: -17px;
+    display: inline-block;
+}
+
+sub{
+	bottom: 0;
+    left: -40px;
+    color: #000000;
 }
 
 body{
-	background-color: #303145;
-	background-image: url(img/main-bg.png);
 	background-size: 100%;
 }
 
-.desktop-bg{
-	width: 1024px;
-    height: auto;
-    margin: auto;
+.container{
+	max-width: 940px;
+	margin: auto;
+	text-align: center
+}
+
+.hero{
+	height: 480px;
+	text-align: center;
+	background-image: url(img/hero-desktop.png);
+	background-size: 100%;
+	display:flex;
+}
+
+.hero-content{
+	margin: auto;
+}
+
+.slim-banner{
+	padding: 60px 0px;
+    margin-top: -60px;
+    background: var(--white);
+}
+
+.heart-motif{
+	height: 80px;
+    background-image: url(img/heart-constellation.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photo{
+	padding-right: 10px;
+    padding-left: 10px;
+}
+
+.photo img{
+    background: #f2f2f2;
     display: block;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-.mobile-bg{
-	width: 320px;
-    height: auto;
+.photo-wide{
+}
+
+.photo-square.bottom{
+	display: flex
+}
+
+.photo-square.bottom img{
+	margin: auto 0 20px 0;
+}
+
+.photo-tall{
+}
+
+.location{
+	position: relative;
+}
+
+.schedule{
+	position: relative;
+}
+
+.schedule .item{
+	position: relative;
+	display: inline-block;
+}
+
+.schedule .item:not(:last-child){
+	margin-right: 60px;
+}
+
+.schedule-activity{
+	display: inline-block;
+    position: absolute;
+    top: 48px;
+    left: 43px;
+}
+
+.registry{
+	max-width: 1199px;
+	margin: auto;
+}
+
+.footer{
+	text-align: center;
+}
+
+/*Typography*/
+
+.heading{
+	font-family: var(--heading-type);
+	font-size: 72px;
+	margin: -60px 0 0 0;
+	color: var(--white);
+	line-height: 108px
+
+}
+
+.subheading{
+	font-family: var(--heading-type);
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.location .subheading{
+	padding-top: var(--gs-4);
+}
+
+.schedule-items{
+	display: flex;
+    padding-top: var(--gs-3);
+    max-width: 620px;
     margin: auto;
-    display: none;
 }
 
+.subheading-large{
+	font-family: var(--heading-type);
+	font-size: 60px;
+	line-height: 90px;
+}
+
+.subheading.color-modifier{
+	color: var(--lilac);
+	
+}
+
+.subheading-large.color-modifier{
+	color: var(--lilac);
+}
+
+.body-copy, .hashtag{
+	font-family: var(--body-type);;
+}
+
+.body-copy{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	-moz-font-feature-settings: "ss01" 1, "ss03" 1, "ss04" 1, "ss06" 1, "ss07" 1;
+    -webkit-font-feature-settings: "ss01" 1, "ss03" 1, "ss04" 1, "ss06" 1, "ss07" 1;
+    font-feature-settings: "ss01" 1, "ss03" 1, "ss04" 1, "ss06" 1, "ss07" 1;
+}
+
+.editorial{
+	font-family: var(--heading-type);
+	font-size: 72px;
+	color: var(--light-grey);
+	text-transform: uppercase;
+	position: absolute;
+    z-index: -1;
+    line-height: 108px;
+    top: 0;
+}
+
+.location .editorial{
+	left: var(--gs-5);
+}
+
+.schedule .editorial{
+	right: var(--gs-5);
+}
+
+.hashtag{
+	font-size: 24px;
+	color: var(--white);
+	margin-top: -28px;
+}
+
+/*spacer*/
+.gs-1{
+	margin-bottom: var(--gs-1);
+}
+
+.gs-2{
+	margin-bottom: var(--gs-2);
+}
+
+.gs-3{
+	margin-bottom: var(--gs-3);
+}
+
+.gs-4{
+	margin-bottom: var(--gs-4);
+}
+
+.gs-5{
+	margin-bottom: var(--gs-5);
+}
+
+iframe .container{
+}
 
 @media (max-width: 481px){
-	.mobile-bg{
-		display: block;
-	}
-	.desktop-bg{
-		display: none;
-	}
 }
+
+
 
