@@ -88,7 +88,6 @@ body{
     margin-bottom: var(--gs-4);
 }
 
-
 .story{
 	margin-bottom: var(--gs-5);
 }
@@ -116,20 +115,6 @@ body{
     display: block;
     margin-bottom: 20px;
     width: 100%;
-}
-
-.photo-wide{
-}
-
-.photo-square.bottom{
-	display: flex
-}
-
-.photo-square.bottom img{
-	margin: auto 0 20px 0;
-}
-
-.photo-tall{
 }
 
 .location, .schedule{
@@ -246,8 +231,12 @@ body{
 	margin-top: -28px;
 }
 
+.photo.bottom{
+	display: flex;
+}
 
-iframe .container{
+.photo.bottom img{
+	margin: auto 0 20px 0;
 }
 
 @media (max-width: 481px){
@@ -297,8 +286,12 @@ iframe .container{
 	line-height: 90px;
 }
 
-.location, .schedule{
+.location{
 	margin-bottom: var(--gs-4);
+}
+
+.schedule{
+	margin-bottom: var(--gs-3);
 }
 
 .editorial{
@@ -355,6 +348,9 @@ iframe .container{
 
 .footer{
 	margin-bottom: var(--gs-4)
+}
+.schedule .item:first-child{
+	margin-right:19px;
 }
 
 
