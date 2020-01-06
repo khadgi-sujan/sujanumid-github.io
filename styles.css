@@ -357,6 +357,10 @@ body{
 	display: block;
 }
 
+.photo.bottom img{
+	margin: auto 0 10px 0;
+}
+
 }
 
 
