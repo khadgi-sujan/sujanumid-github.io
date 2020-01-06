@@ -353,6 +353,9 @@ body{
 	margin-right:19px;
 }
 
+.photo.bottom{
+	display: block;
+}
 
 }
 
