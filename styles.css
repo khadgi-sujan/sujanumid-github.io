@@ -12,7 +12,7 @@ html{
 
 :root {
   --white: #ffffff;
-  --lilac: #C09EBF;
+  --berry: #8A519C;
   --light-grey: #f6f6f6;
   --heading-type:'Poppins', sans-serif;;
   --body-type:'Roboto', sans-serif;
@@ -61,6 +61,7 @@ body{
 	text-align: center;
 	background-image: url(img/hero-desktop.png);
 	background-size: 100%;
+	background-position: center;
 	display:flex;
 }
 
@@ -185,12 +186,12 @@ body{
 }
 
 .subheading.color-modifier{
-	color: var(--lilac);
+	color: var(--berry);
 	
 }
 
 .subheading-large.color-modifier{
-	color: var(--lilac);
+	color: var(--berry);
 }
 
 .body-copy, .hashtag{
@@ -243,6 +244,7 @@ body{
 .hero{
 	background-image: url(img/hero-mobile.png);
 	background-size: cover;
+	background-position: center;
 	display:flex;
 }
 
