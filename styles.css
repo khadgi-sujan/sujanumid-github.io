@@ -1,5 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
-@import url('https://fonts.googleapis.com/css?family=Poppins:900|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700,900|Roboto&display=swap');
 html{
 	font-size: 100%;
 }
@@ -48,6 +48,36 @@ body{
 	background-size: 100%;
 }
 
+.btn{
+	padding: 8px;
+	min-width: 120px;
+	height: 40px;
+	font-weight: 700;
+	font-family: var(--heading-type);
+	text-align: center;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.btn-outline{
+	border: 1px solid #000000;
+}
+
+.btn-outline:hover{
+	border: 1px solid #777777;
+	color: #777777;
+}
+
+.btn-default{
+	background-color: #000000;
+	color: #ffffff; 
+}
+
+.btn-default:hover{
+	background-color: #333333;
+	color: #ffffff;
+}
+
 .container{
 	max-width: 940px;
 	margin: auto;
@@ -78,6 +108,10 @@ body{
 
 .slim-banner .body-copy{
 	margin-bottom: var(--gs-1);
+}
+
+.slim-banner .subheading{
+	margin-bottom: var(--gs-2);
 }
 
 .heart-motif{
@@ -123,6 +157,35 @@ body{
 	margin-bottom: var(--gs-5);
 }
 
+.rsvp{
+	margin-bottom: var(--gs-5);
+}
+
+.rsvp .subheading{
+	margin-bottom: var(--gs-1);
+}
+
+.rsvp .body-copy{
+	margin-bottom: var(--gs-2);
+}
+
+.rsvp .btn-group{
+	margin-bottom: var(--gs-1);
+}
+
+.rsvp .error{
+	color: #FF0000;
+	display: none;
+}
+
+.rsvp-input{
+	height: 40px;
+	border: 1px solid #c4c4c4;
+	min-width: 200px;
+	padding: 8px;
+	font-family: var(--heading-type);
+}
+
 .schedule .item{
 	position: relative;
 	display: inline-block;
@@ -157,14 +220,15 @@ body{
 	font-size: 72px;
 	margin: -60px 0 0 0;
 	color: var(--white);
-	line-height: 108px
-
+	line-height: 108px;
+	font-weight: 900;
 }
 
 .subheading{
 	font-family: var(--heading-type);
 	font-size: 32px;
 	line-height: 48px;
+	font-weight: 900;
 }
 
 .location .subheading{
@@ -183,6 +247,7 @@ body{
 	font-size: 60px;
 	line-height: 90px;
 	margin-bottom: 0;
+	font-weight: 900;
 }
 
 .subheading.color-modifier{
@@ -216,6 +281,7 @@ body{
     z-index: -1;
     line-height: 108px;
     top: 0;
+    font-weight: 900;
 }
 
 .location .editorial{
